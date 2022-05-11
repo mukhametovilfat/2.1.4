@@ -7,14 +7,12 @@ import java.io.File;
 
 @Component
 public class Rabbit4 {
-    @Autowired
-    private Duck5 duck5;
+    private final Duck5 duck5;
 
+    @Autowired
     public Rabbit4(Duck5 duck5) {
         this.duck5 = duck5;
     }
-
-
 
     @Override
     public String toString() {
